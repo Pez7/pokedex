@@ -9,7 +9,7 @@ $(document).ready(function(){
 	console.log("event");
 	event.results.forEach(function(elemento,imagen){
 		var picture = imagen + 1;
-		$(".poke").append("<div class='poke1'><img src='http://pokeapi.co/media/img/" + picture +".png'>" + elemento.name + "</div>");
+		$(".poke").append("<div class='col s3 poke1'><img src='http://pokeapi.co/media/img/" + picture +".png'>"+" <br> "+ elemento.name + "</div>");
 	})
 })
 .fail(function() {
